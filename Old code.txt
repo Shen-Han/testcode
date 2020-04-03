@@ -1,0 +1,79 @@
+Controller
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+
+public class NewStudentViewController implements Initializable {
+
+    @FXML
+    @FXML
+    @FXML
+    @FXML
+
+    Button Button;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+
+
+
+
+
+    Button = new Button();
+    Button.setText("Click Me");
+
+
+
+
+    public boolean fieldsAreFull(){
+        String message= "";
+        if(firstNameTextField.getText().isEmpty()){
+            message = "First name field is empty";
+        }
+
+        if(lastNameTextField.getText().isEmpty()){
+            message = "Last name field is Empty";
+        }
+
+        //May need to change this to integer
+        if(studentNumberIntField.getInt().isEmpty()){
+            message = "Student Number field is Empty";
+        }
+
+        if(interestSelection.getCheckMark().isEmpty()){
+            message = "No interest selected";
+        }
+
+        //Message for when all required fields are empty
+
+        if(firstNameTextField.getText().isEmpty()&&lastNameTextField.getText().isEmpty()&&studentNumberTextField.getText().isEmpty()&&interestSelection.getCheckMark().isEmpty()){
+            message = "All required fields are empty";
+        }
+    }
+}
+
+FXML
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="NewStudentViewController"
+            prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane>

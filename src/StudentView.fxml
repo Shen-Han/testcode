@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="StudentViewController">
+  <children>
+    <Pane layoutX="14.0" layoutY="14.0" prefHeight="325.0" prefWidth="575.0">
+      <children>
+        <VBox layoutX="272.0" layoutY="14.0" prefHeight="363.0" prefWidth="289.0">
+          <children>
+            <Label fx:id="studentDisplay" prefHeight="188.0" prefWidth="319.0" text="Student Info" />
+            <Label text="Favourite Activities:" />
+            <ListView fx:id="favAct1" prefHeight="100.0" prefWidth="289.0" />
+          </children>
+        </VBox>
+        <ImageView fx:id="studentImageView" fitHeight="319.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

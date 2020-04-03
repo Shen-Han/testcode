@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="681.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewStudentViewController">
+   <children>
+      <VBox alignment="CENTER" layoutX="119.0" layoutY="101.0" prefHeight="256.0" prefWidth="374.0" spacing="20.0" AnchorPane.bottomAnchor="324.0" AnchorPane.leftAnchor="119.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="101.0">
+         <children>
+            <TextField fx:id="firstNameTextEntry" promptText="First Name" />
+            <TextField fx:id="lastNameTextEntry" promptText="Last Name" />
+            <TextField fx:id="studentNumberTextEntry" promptText="Student Number" />
+            <Label />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding></VBox>
+      <Button fx:id="submitButton" layoutX="150.0" layoutY="589.0" mnemonicParsing="false"  text="Submit" />
+      <Pane layoutX="120.0" layoutY="298.0" prefHeight="200.0" prefWidth="371.0">
+         <children>
+            <VBox prefHeight="183.0" prefWidth="152.0" spacing="20.0">
+               <children>
+                  <CheckBox fx:id="gaming" mnemonicParsing="false" text="Gaming" />
+                  <CheckBox fx:id="music" mnemonicParsing="false" text="Music" />
+                  <CheckBox fx:id="coding" mnemonicParsing="false" text="Coding" />
+                  <CheckBox fx:id="sports" mnemonicParsing="false" text="Sports" />
+               </children>
+               <opaqueInsets>
+                  <Insets right="20.0" top="20.0" />
+               </opaqueInsets>
+            </VBox>
+            <VBox layoutX="217.0" prefHeight="200.0" prefWidth="152.0" spacing="20.0">
+               <children>
+                  <CheckBox fx:id="driving" mnemonicParsing="false" text="Driving" />
+                  <CheckBox fx:id="mazda" mnemonicParsing="false" text="Mazda" />
+                  <CheckBox fx:id="food" mnemonicParsing="false" text="Food" />
+                  <CheckBox fx:id="cooking" mnemonicParsing="false" text="Cooking" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <VBox layoutX="14.0" layoutY="155.0" prefHeight="200.0" prefWidth="121.0" spacing="26.0" AnchorPane.bottomAnchor="326.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="359.0" AnchorPane.topAnchor="155.0">
+         <children>
+            <Label text="First Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Last Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Student Number">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Interests:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="126.0" prefHeight="109.0" prefWidth="243.0" text="Create New Student">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMessage" layoutX="233.0" layoutY="505.0" />
+   </children>
+</AnchorPane>
